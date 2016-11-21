@@ -1,17 +1,7 @@
 package entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+public class StupidEmployee {
 
-@Entity
-public class Employee {
-	
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Integer employeeID;
-	
 	String lastName;
 	String firstName;
 	String agenceID;
@@ -36,7 +26,6 @@ public class Employee {
 	}
 	
 	public String toString(){
-		return this.employeeID + " " + this.firstName + " " + this.lastName +  " " + this.agenceID;
+		return this.firstName + " " + this.lastName +  " " + this.agenceID;
 	}
-
 }
